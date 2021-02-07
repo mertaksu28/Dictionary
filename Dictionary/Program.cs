@@ -10,6 +10,26 @@ namespace Dictionary
     {
         static void Main(string[] args)
         {
+            MyDictionary<string, int> dates = new MyDictionary<string, int>();
+            dates.Add("İstanbul'un Fethi", 1453);
+
+            Console.WriteLine(dates.Length);
+
+            dates.Add("Cumhuriyetin İlanı", 1923);
+
+            Console.WriteLine(dates.Length);
+
+
+            foreach (var date in dates.Keys)
+            {
+                Console.WriteLine(date);
+            }
+
+
+
+
+
+            Console.ReadLine();
         }
     }
 }
